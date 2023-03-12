@@ -44,5 +44,14 @@
 
 ?>
     
+<!-- Catatan -->
+    
+    Print dan Echo sama " bwt menampilkan kodingan ke layar, bedanya echo bisa dikasih lebih dari 1 parameter sedangkan print enggak.
+    
+    variabel dan konstanta sama" bisa menyimpan nilai/value tapi bedanya variabel bisa ditumpuk sedangkan konstanta enggak.
+    
+    Penulisan variabel diphp gak perlu di deklarasiin pake syntax var dan juga diberi penjelasan tipe data (string, int, dst) karena bisa langsung otomatis
+    kebaca oleh mesin hanya dengan menulis variabel dengan awalan $.
+    
 </body>
 </html>
