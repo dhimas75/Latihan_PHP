@@ -1,0 +1,322 @@
+Ada 6 Jenis operator dalam pemrograman PHP yang harus kita ketahui:
+
+Operator Aritmatika;
+Operator Penugasan atau Assignment;
+Operator Increment & Decrement;
+Operator Relasi atau pembanding;
+Operator Logika;
+Operator Bitwise;
+dan Operator Ternary.
+
+1. Operator Aritmatika
+Operator aritmatika merupakan operator untuk melakukan operasi aritmatika.
+
+Operator aritmatika terdiri dari:
+
+
+Nama Operator	Simbol
+Penjumlahan	      +
+Pengurangan	      -
+Perkalian	      *
+Pemangkatan	      **
+Pembagian	      /
+Sisa Bagi	      %
+
+Contoh :
+
+<?php
+
+$a = 5;
+$b = 2;
+
+// penjumlahan
+$c = $a + $b;
+echo "$a + $b = $c";
+echo "<hr>";
+
+// pengurangan
+$c = $a - $b;
+echo "$a - $b = $c";
+echo "<hr>";
+
+// Perkalian
+$c = $a * $b;
+echo "$a * $b = $c";
+echo "<hr>";
+
+// Pembagian
+$c = $a / $b;
+echo "$a / $b = $c";
+echo "<hr>";
+
+// Sisa bagi
+$c = $a % $b;
+echo "$a % $b = $c";
+echo "<hr>";
+
+// Pangkat
+$c = $a ** $b;
+echo "$a ** $b = $c";
+echo "<hr>";
+
+?>
+
+2. Operator Penugasan
+Operator berikutnya yang harus kamu ketahi adalah operator penugasan atau assignment.
+
+Yap! dari namanya saja sudah bisa ditebak.
+
+Operator ini adalah operator untuk memberikan tugas kepada variabel.
+
+Biasanya digunakan untuk mengisi nilai.
+
+Contoh :
+$a = 32;
+
+Sama dengan (=) adalah operator penugasan untuk mengisi nilai.
+
+Selain sama dengan, terdapat juga beberapa orpeator penugasan seperti:
+
+Nama Operator	                        Sombol
+Pengisian Nilai                           =
+Pengisian dan Penambahan                  +=
+Pengisian dan Pengurangan                 -=
+Pengisian dan Perkalian                   *=
+Pengisian dan Pemangkatan                 **=
+Pengisian dan Pembagian                   /=
+Pengisian dan Sisa bagi                   %=
+Pengisian dan Peggabungan (string)        .=
+
+Apa bedanya dengan operator aritmatika?
+
+Operator penugasan digunakan untuk mengisi nilai dan juga menghitung dengan operasi aritmatika. Sedangkan operator aritmatika hanya berfungsi untuk menghitung saja.
+
+Contoh :
+
+$speed = 83;
+
+// ini opertor aritmatika
+$speed = $speed + 10;
+
+// maka nilai speed akan samadengan 83 + 10 = 93
+
+// ini operator penugasan
+$speed += 10;
+
+// sekarang nilai speed akan menjadi 93 + 10 = 103
+
+3. Opeartor Increment & Decrement
+Operator increment dan decrement merupakan operator yang digunakan untuk menambah +1 (tambah satu) dan mengurangi -1 (kurangi dengan satu).
+
+Opertor increment menggunakan simbol ++, sedangkan decrement menggunakan simbol --.
+
+Contoh :
+$score = 0;
+
+$score++;
+$score++;
+$score++;
+
+echo $score;
+
+// Hasilnya akan score = 3; karena increment sebanyak 3x.
+
+4. Operator Relasi
+Operator relasi adalah operator untuk membandingkan dua buah nilai.
+
+Hasil operasi dari operator relasi akan menghasilkan nilai dengan tipe data boolean, yaitu true (benar) dan false (salah).
+
+Berikut ini daftar operator relasi:
+
+
+Nama Operator                   Simbol
+Lebih Besar                       >
+Lebih Kecil                       <
+Sama Dengan                       == atau ===
+Tidak Sama dengan                 != atau !==
+Lebih Besar Sama dengan           >=
+Lebih Kecil Sama dengan           <=
+
+Contoh :
+
+<?php
+
+$a = 6;
+$b = 2;
+
+// menggunakan operator relasi lebih besar
+$c = $a > $b;
+echo "$a > $b: $c";
+echo "<hr>";
+
+// menggunakan operator relasi lebih kecil
+$c = $a < $b;
+echo "$a < $b: $c";
+echo "<hr>";
+
+// menggunakan operator relasi lebih sama dengan
+$c = $a == $b;
+echo "$a == $b: $c";
+echo "<hr>";
+
+// menggunakan operator relasi lebih tidak sama dengan
+$c = $a != $b;
+echo "$a != $b: $c";
+echo "<hr>";
+
+// menggunakan operator relasi lebih besar sama dengan
+$c = $a >= $b;
+echo "$a >= $b: $c";
+echo "<hr>";
+
+// menggunakan operator relasi lebih kecil sama dengan
+$c = $a <= $b;
+echo "$a <= $b: $c";
+echo "<hr>";
+
+// Untuk switchcase dan temen"nya kemaren gw pake operator ini, tapi semuanya disesuaikan dengan kebutuhan
+mau pake operator yang mana.
+
+5. Operator Logika
+Jika kamu pernah belajar logika matematika, kamu pasti tidak akan asing dengan operator ini.
+
+Operator logika adalah operator untuk melakukan operasi logika seperti AND, OR, dan NOT.
+
+Operator logika terdiri dari:
+
+Nama Operator	        Simbol
+Logika AND	              &&
+Logika OR	              ||
+Negasi/kebalikan/ NOT	  !
+
+Contoh :
+
+<?php
+
+$a = true;
+$b = false;
+
+// variabel $c akan bernilai false
+$c = $a && $b;
+printf("%b && %b = %b", $a,$b,$c);
+echo "<hr>";
+
+// variabel $c akan bernilai true
+$c = $a || $b;
+printf("%b || %b = %b", $a,$b,$c);
+echo "<hr>";
+
+// variabel $c akan bernilai false
+$c = !$a;
+printf("!%b = %b", $a, $c);
+echo "<hr>";
+
+Hukum AND, OR dan NOT(Negasi) :
+
+a. AND
+
+      AND              Hasil
+True   |    True        True
+True   |    False       False
+False  |    True        False
+False  |    False       False
+
+b. OR
+
+       OR              Hasil
+True   |    True        True
+True   |    False       True
+False  |    True        True
+False  |    False       False
+
+c. NOT
+
+NOT       Hasil
+True   |    False       True
+False  |    True        True
+
+6. Operator Bitwise
+Operator bitwise merupkan operator yang digunakan untuk operasi bit (biner).
+
+Operator ini terdiri dari:
+
+Nama	            Simbol di Java
+AND	                      &
+OR	                      |
+XOR                    	  ^
+Negasi/kebalikan	      ~
+Left Shift	              <<
+Right Shift	              >>
+
+Contoh operasi bitwise
+
+a = 00111100
+b = 00001101
+
+Operasi AND
+
+a = 00111100
+b = 00001101
+a & b = 00001100
+
+Operasi OR
+
+a = 00111100
+b = 00001101
+a | b = 00111101
+Operasi XOR
+
+a = 00111100
+b = 00001101
+a ^ b = 00110001
+Opearsi NOT (Negasi/kebalikan)
+
+a = 00111100
+~a  = 11000011
+
+Contoh lengkap
+
+<?php
+
+$a = 60;
+$b = 13;
+
+// bitwise AND
+$c = $a & $b;
+echo "$a & $b = $c";
+echo "<br>";
+
+// bitwise OR
+$c = $a | $b;
+echo "$a | $b = $c";
+echo "<br>";
+
+// bitwise XOR
+$c = $a ^ $b;
+echo "$a ^ $b = $c";
+echo "<br>";
+
+// Shift Left
+$c = $a << $b;
+echo "$a << $b = $c";
+echo "<br>";
+
+// Shift Right
+$c = $a >> $b;
+echo "$a >> $b = $c";
+echo "<br>";
+
+7. Operator Ternary
+Operator ternary adalah operator untuk membuat sebuah kondisi. Simbol yang digunakan adalah tanda tanya (?) dan titik dua (:).
+
+Contoh : 
+
+<?php
+
+$suka = true;
+
+// menggunakan operator ternary
+$jawab = $suka ? "iya": "tidak";
+
+// menampilkan jawaban
+echo $jawab;
