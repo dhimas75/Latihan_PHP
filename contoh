@@ -1,0 +1,24 @@
+// Ini Do While
+
+<?php
+
+do{
+    //block kode yang akan diulang
+}while(<kondisinya>);
+
+?>
+
+// Ini While
+
+<?php
+
+while(<kondisinya>){
+    //block kode yang akan diulang
+}
+?>
+
+// Foreach
+
+foreach($array as $data){
+    echo $data;
+}
